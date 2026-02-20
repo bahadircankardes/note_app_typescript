@@ -28,14 +28,14 @@ const Filter:FC <Props> = ({title,tags,setTitle,setTags}) => {
             <input 
             type="text" 
             placeholder='Search notes...'
-            className='pl-10 pr-4 py-2.5 w-full rounded-md border border-border text-shadow-text-primary bg-card placeholder:text-text-secondary focus:outline focus:ring-2 focus:ring-primary transition-all'
+            className='pl-10 pr-4 py-2.5 w-full rounded-md border border-border text-text-primary bg-card placeholder:text-text-secondary focus:outline focus:ring-2 focus:ring-primary transition-all'
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             />
           </div>
         </div>
         {/*Tag Input*/}
-        <div className='w-full'>
+        <div className='w-full md:w-1/2'>
           <ReactSelect 
             isMulti
             styles={selectStyles}
